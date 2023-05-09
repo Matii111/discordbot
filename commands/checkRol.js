@@ -1,8 +1,7 @@
-const { SlashCommandBuilder } = require('discord.js');
-
+const { SlashCommandBuilder,PermissionsBitField} = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('checkrol')
+		.setName('rol')
 		.setDescription('Check if you have enough power'),
 	async execute(interaction) {
 		if (message.member.roles.cache.some(role => role.name === 'dev')) {
